@@ -1,17 +1,12 @@
-/* ************************************************************************** */
-/*                                                                            */
-/*                                                        :::      ::::::::   */
-/*   ft_itoa.c                                          :+:      :+:    :+:   */
-/*                                                    +:+ +:+         +:+     */
-/*   By: jbertin <marvin@42.fr>                     +#+  +:+       +#+        */
-/*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2022/11/07 12:43:53 by jbertin           #+#    #+#             */
-/*   Updated: 2022/11/07 12:43:55 by jbertin          ###   ########.fr       */
-/*                                                                            */
-/* ************************************************************************** */
-
 #include "./libft.h"
 
+/**
+ * Calculates the number of digits required to represent an integer, including the sign for negative numbers.
+ * This function determines how many characters are needed to print an integer in base 10.
+ * For negative numbers, an additional character is considered for the '-' sign.
+ * @param	a	The integer whose size needs to be determined.
+ * @return	Returns the number of characters required to represent 'a', considering the sign for negatives.
+ */
 static int	ft_size_m(int a)
 {
 	unsigned long long int	i;
@@ -31,6 +26,11 @@ static int	ft_size_m(int a)
 	return ((int)i + 1);
 }
 
+/**
+ * Converts an integer into a string.
+ * @param	nb	Integer to convert.
+ * @return	Returns the string representation of the integer or NULL if the allocation fails.
+ */
 char	*ft_itoa(int nb)
 {
 	char			*str;

@@ -1,17 +1,12 @@
-/* ************************************************************************** */
-/*                                                                            */
-/*                                                        :::      ::::::::   */
-/*   ft_strnstr.c                                       :+:      :+:    :+:   */
-/*                                                    +:+ +:+         +:+     */
-/*   By: jbertin <marvin@42.fr>                     +#+  +:+       +#+        */
-/*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2022/11/07 12:49:33 by jbertin           #+#    #+#             */
-/*   Updated: 2022/11/08 18:30:52 by jbertin          ###   ########.fr       */
-/*                                                                            */
-/* ************************************************************************** */
-
 #include "./libft.h"
 
+/**
+ * Locates the first occurrence of to_find in str, where not more than len characters are searched.
+ * @param	str	String to be searched.
+ * @param	to_find	Substring to be located.
+ * @param	len	Number of characters to be searched.
+ * @return	Returns a pointer to the first character of the first occurrence, or NULL if the substring is not found.
+ */
 char	*ft_strnstr(const char *str, const char *to_find, size_t len)
 {
 	size_t	i;

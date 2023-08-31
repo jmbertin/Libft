@@ -1,17 +1,10 @@
-/* ************************************************************************** */
-/*                                                                            */
-/*                                                        :::      ::::::::   */
-/*   ft_putnbr_fd.c                                     :+:      :+:    :+:   */
-/*                                                    +:+ +:+         +:+     */
-/*   By: jbertin <marvin@42.fr>                     +#+  +:+       +#+        */
-/*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2022/11/07 12:46:54 by jbertin           #+#    #+#             */
-/*   Updated: 2022/11/07 12:46:56 by jbertin          ###   ########.fr       */
-/*                                                                            */
-/* ************************************************************************** */
-
 #include "./libft.h"
 
+/**
+ * Outputs the integer 'n' to the given file descriptor.
+ * @param	n	Integer to output.
+ * @param	fd	File descriptor.
+ */
 void	ft_putnbr_fd(int nb, int fd)
 {
 	if (nb == -2147483648)

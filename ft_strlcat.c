@@ -1,17 +1,12 @@
-/* ************************************************************************** */
-/*                                                                            */
-/*                                                        :::      ::::::::   */
-/*   ft_strlcat.c                                       :+:      :+:    :+:   */
-/*                                                    +:+ +:+         +:+     */
-/*   By: jbertin <marvin@42.fr>                     +#+  +:+       +#+        */
-/*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2022/11/07 12:48:27 by jbertin           #+#    #+#             */
-/*   Updated: 2022/11/08 18:44:10 by jbertin          ###   ########.fr       */
-/*                                                                            */
-/* ************************************************************************** */
-
 #include "./libft.h"
 
+/**
+ * Appends string src to the end of dst. Will append at most size - strlen(dst) - 1 characters.
+ * @param	dest	Destination buffer.
+ * @param	src	Source string.
+ * @param	size	Size of the destination buffer.
+ * @return	Returns the total length of the string that tried to create (initial length of dst + length of src).
+ */
 size_t	ft_strlcat(char *dest, const char *src, unsigned int size)
 {
 	unsigned int	i_d;

@@ -1,17 +1,10 @@
-/* ************************************************************************** */
-/*                                                                            */
-/*                                                        :::      ::::::::   */
-/*   ft_lstclear.c                                      :+:      :+:    :+:   */
-/*                                                    +:+ +:+         +:+     */
-/*   By: jbertin <marvin@42.fr>                     +#+  +:+       +#+        */
-/*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2022/11/07 12:44:26 by jbertin           #+#    #+#             */
-/*   Updated: 2022/11/07 18:19:46 by jbertin          ###   ########.fr       */
-/*                                                                            */
-/* ************************************************************************** */
-
 #include "./libft.h"
 
+/**
+ * Clears the content of the list, and free each element using the function 'del' and free.
+ * @param	lst		Pointer to the beginning of the list.
+ * @param	del		Function to delete content of a list element.
+ */
 void	ft_lstclear(t_list **lst, void (*del)(void*))
 {
 	t_list	*temp;

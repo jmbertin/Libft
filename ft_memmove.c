@@ -1,17 +1,13 @@
-/* ************************************************************************** */
-/*                                                                            */
-/*                                                        :::      ::::::::   */
-/*   ft_memmove.c                                       :+:      :+:    :+:   */
-/*                                                    +:+ +:+         +:+     */
-/*   By: jbertin <marvin@42.fr>                     +#+  +:+       +#+        */
-/*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2022/11/07 12:46:00 by jbertin           #+#    #+#             */
-/*   Updated: 2022/11/07 12:46:02 by jbertin          ###   ########.fr       */
-/*                                                                            */
-/* ************************************************************************** */
-
 #include "./libft.h"
 
+/**
+ * Moves n bytes from memory area source to memory area destination.
+ * Handles overlap.
+ * @param	destination	Pointer to the destination memory area.
+ * @param	source	Pointer to the source memory area.
+ * @param	size	Number of bytes to be moved.
+ * @return	Returns a pointer to destination.
+ */
 void	*ft_memmove(void *destination, const void *source, size_t size)
 {
 	unsigned char	*s;

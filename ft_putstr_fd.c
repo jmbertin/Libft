@@ -1,17 +1,10 @@
-/* ************************************************************************** */
-/*                                                                            */
-/*                                                        :::      ::::::::   */
-/*   ft_putstr_fd.c                                     :+:      :+:    :+:   */
-/*                                                    +:+ +:+         +:+     */
-/*   By: jbertin <jbertin@student.42.fr>            +#+  +:+       +#+        */
-/*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2022/11/07 12:47:12 by jbertin           #+#    #+#             */
-/*   Updated: 2022/11/09 08:15:41 by jbertin          ###   ########.fr       */
-/*                                                                            */
-/* ************************************************************************** */
-
 #include "./libft.h"
 
+/**
+ * Outputs the string 's' to the given file descriptor.
+ * @param	s	String to output.
+ * @param	fd	File descriptor.
+ */
 void	ft_putstr_fd(char *s, int fd)
 {
 	int	i;

@@ -1,17 +1,12 @@
-/* ************************************************************************** */
-/*                                                                            */
-/*                                                        :::      ::::::::   */
-/*   ft_memset.c                                        :+:      :+:    :+:   */
-/*                                                    +:+ +:+         +:+     */
-/*   By: jbertin <marvin@42.fr>                     +#+  +:+       +#+        */
-/*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2022/11/07 12:46:08 by jbertin           #+#    #+#             */
-/*   Updated: 2022/11/07 12:46:10 by jbertin          ###   ########.fr       */
-/*                                                                            */
-/* ************************************************************************** */
-
 #include "./libft.h"
 
+/**
+ * Fills a block of memory with a specified value.
+ * @param	s	Pointer to the block of memory to fill.
+ * @param	c	Value to be set.
+ * @param	n	Number of bytes to be set to the value.
+ * @return	Returns a pointer to the memory area s.
+ */
 void	*ft_memset(void *s, int c, size_t n)
 {
 	unsigned char	*str;

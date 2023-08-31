@@ -1,17 +1,10 @@
-/* ************************************************************************** */
-/*                                                                            */
-/*                                                        :::      ::::::::   */
-/*   ft_strdup.c                                        :+:      :+:    :+:   */
-/*                                                    +:+ +:+         +:+     */
-/*   By: jbertin <marvin@42.fr>                     +#+  +:+       +#+        */
-/*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2022/11/07 12:48:07 by jbertin           #+#    #+#             */
-/*   Updated: 2022/11/08 12:09:56 by jbertin          ###   ########.fr       */
-/*                                                                            */
-/* ************************************************************************** */
-
 #include "./libft.h"
 
+/**
+ * Returns a pointer to a new string which is a duplicate of the string src.
+ * @param	src	String to be duplicated.
+ * @return	Returns a pointer to the duplicated string or NULL if insufficient memory was available.
+ */
 char	*ft_strdup(const char *src)
 {
 	char	*dest;

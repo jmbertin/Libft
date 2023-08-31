@@ -1,15 +1,10 @@
-/* ************************************************************************** */
-/*                                                                            */
-/*                                                        :::      ::::::::   */
-/*   ft_isalpha.c                                       :+:      :+:    :+:   */
-/*                                                    +:+ +:+         +:+     */
-/*   By: jbertin <marvin@42.fr>                     +#+  +:+       +#+        */
-/*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2022/11/07 12:43:04 by jbertin           #+#    #+#             */
-/*   Updated: 2022/11/07 12:43:07 by jbertin          ###   ########.fr       */
-/*                                                                            */
-/* ************************************************************************** */
+#include "./libft.h"
 
+/**
+ * Checks if the given character is an alphabetic character.
+ * @param	arg	Character to be checked.
+ * @return	Returns non-zero if the character is alphabetic, 0 otherwise.
+ */
 int	ft_isalpha(int arg)
 {
 	if (arg < 65 || (arg > 90 && arg < 97) || arg > 122)

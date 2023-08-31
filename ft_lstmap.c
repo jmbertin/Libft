@@ -1,17 +1,13 @@
-/* ************************************************************************** */
-/*                                                                            */
-/*                                                        :::      ::::::::   */
-/*   ft_lstmap.c                                        :+:      :+:    :+:   */
-/*                                                    +:+ +:+         +:+     */
-/*   By: jbertin <jbertin@student.42.fr>            +#+  +:+       +#+        */
-/*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2022/11/07 12:44:58 by jbertin           #+#    #+#             */
-/*   Updated: 2022/11/09 08:11:31 by jbertin          ###   ########.fr       */
-/*                                                                            */
-/* ************************************************************************** */
-
 #include "./libft.h"
 
+/**
+ * Transforms each element's content using the function 'f', and creates a new list out of the results.
+ * If memory allocation fails or if 'del' is needed, it will be applied to delete the content.
+ * @param	lst		Beginning of the list.
+ * @param	f		Function to transform content of an element.
+ * @param	del		Function to delete content if necessary.
+ * @return	Returns the new list or NULL if memory allocation fails.
+ */
 t_list	*ft_lstmap(t_list *lst, void *(*f)(void *), void (*del)(void *))
 {
 	t_list	*new;

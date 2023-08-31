@@ -1,17 +1,10 @@
-/* ************************************************************************** */
-/*                                                                            */
-/*                                                        :::      ::::::::   */
-/*   ft_lstiter.c                                       :+:      :+:    :+:   */
-/*                                                    +:+ +:+         +:+     */
-/*   By: jbertin <marvin@42.fr>                     +#+  +:+       +#+        */
-/*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2022/11/07 12:44:43 by jbertin           #+#    #+#             */
-/*   Updated: 2022/11/07 12:44:45 by jbertin          ###   ########.fr       */
-/*                                                                            */
-/* ************************************************************************** */
-
 #include "./libft.h"
 
+/**
+ * Iterates the list 'lst' and applies the function 'f' to the content of each element.
+ * @param	lst		Beginning of the list.
+ * @param	f		Function to apply to each element's content.
+ */
 void	ft_lstiter(t_list *lst, void (*f)(void *))
 {
 	if (lst && f)

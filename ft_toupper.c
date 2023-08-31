@@ -1,15 +1,10 @@
-/* ************************************************************************** */
-/*                                                                            */
-/*                                                        :::      ::::::::   */
-/*   ft_toupper.c                                       :+:      :+:    :+:   */
-/*                                                    +:+ +:+         +:+     */
-/*   By: jbertin <marvin@42.fr>                     +#+  +:+       +#+        */
-/*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2022/11/07 12:50:35 by jbertin           #+#    #+#             */
-/*   Updated: 2022/11/07 12:50:38 by jbertin          ###   ########.fr       */
-/*                                                                            */
-/* ************************************************************************** */
+#include "./libft.h"
 
+/**
+ * Converts the given character to uppercase if it is lowercase.
+ * @param	c	Character to be converted.
+ * @return	Returns the uppercase version of the character if it is lowercase, otherwise returns the character itself.
+ */
 int	ft_toupper(int c)
 {
 	if (c >= 'a' && c <= 'z')

@@ -1,15 +1,10 @@
-/* ************************************************************************** */
-/*                                                                            */
-/*                                                        :::      ::::::::   */
-/*   ft_striteri.c                                      :+:      :+:    :+:   */
-/*                                                    +:+ +:+         +:+     */
-/*   By: jbertin <marvin@42.fr>                     +#+  +:+       +#+        */
-/*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2022/11/08 09:40:45 by jbertin           #+#    #+#             */
-/*   Updated: 2022/11/08 11:44:29 by jbertin          ###   ########.fr       */
-/*                                                                            */
-/* ************************************************************************** */
+#include "./libft.h"
 
+/**
+ * Applies the function 'f' to each character of the string at a specific index.
+ * @param	s	String to iterate through.
+ * @param	f	Function to apply to each character at its index.
+ */
 void	ft_striteri(char *s, void (*f)(unsigned int, char*))
 {
 	int		i;

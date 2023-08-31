@@ -1,17 +1,10 @@
-/* ************************************************************************** */
-/*                                                                            */
-/*                                                        :::      ::::::::   */
-/*   ft_strlen.c                                        :+:      :+:    :+:   */
-/*                                                    +:+ +:+         +:+     */
-/*   By: jbertin <marvin@42.fr>                     +#+  +:+       +#+        */
-/*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2022/11/07 12:48:44 by jbertin           #+#    #+#             */
-/*   Updated: 2022/11/07 12:48:45 by jbertin          ###   ########.fr       */
-/*                                                                            */
-/* ************************************************************************** */
-
 #include "./libft.h"
 
+/**
+ * Computes the length of the string str up to, but not including the terminating null character.
+ * @param	str	Pointer to the string.
+ * @return	Returns the number of characters in the string.
+ */
 size_t	ft_strlen(const char *str)
 {
 	size_t	i;

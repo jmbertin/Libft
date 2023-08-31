@@ -1,17 +1,11 @@
-/* ************************************************************************** */
-/*                                                                            */
-/*                                                        :::      ::::::::   */
-/*   ft_strrchr.c                                       :+:      :+:    :+:   */
-/*                                                    +:+ +:+         +:+     */
-/*   By: jbertin <marvin@42.fr>                     +#+  +:+       +#+        */
-/*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2022/11/07 12:49:49 by jbertin           #+#    #+#             */
-/*   Updated: 2022/11/07 12:49:50 by jbertin          ###   ########.fr       */
-/*                                                                            */
-/* ************************************************************************** */
-
 #include "./libft.h"
 
+/**
+ * Locates the last occurrence of the character searchedChar in the string.
+ * @param	string	String to be searched.
+ * @param	searchedChar	Character to be located.
+ * @return	Returns a pointer to the last occurrence of the character in the string, or NULL if the character is not found.
+ */
 char	*ft_strrchr(const char *string, int searchedChar)
 {
 	int	end;

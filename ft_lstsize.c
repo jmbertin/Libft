@@ -1,17 +1,10 @@
-/* ************************************************************************** */
-/*                                                                            */
-/*                                                        :::      ::::::::   */
-/*   ft_lstsize.c                                       :+:      :+:    :+:   */
-/*                                                    +:+ +:+         +:+     */
-/*   By: jbertin <marvin@42.fr>                     +#+  +:+       +#+        */
-/*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2022/11/07 12:45:16 by jbertin           #+#    #+#             */
-/*   Updated: 2022/11/07 12:45:17 by jbertin          ###   ########.fr       */
-/*                                                                            */
-/* ************************************************************************** */
-
 #include "./libft.h"
 
+/**
+ * Counts the number of elements in the list.
+ * @param	lst		Beginning of the list.
+ * @return	Returns the number of elements in the list.
+ */
 int	ft_lstsize(t_list *lst)
 {
 	int	i;

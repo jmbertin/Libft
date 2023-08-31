@@ -1,17 +1,10 @@
-/* ************************************************************************** */
-/*                                                                            */
-/*                                                        :::      ::::::::   */
-/*   ft_lstlast.c                                       :+:      :+:    :+:   */
-/*                                                    +:+ +:+         +:+     */
-/*   By: jbertin <marvin@42.fr>                     +#+  +:+       +#+        */
-/*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2022/11/07 12:44:51 by jbertin           #+#    #+#             */
-/*   Updated: 2022/11/07 12:44:52 by jbertin          ###   ########.fr       */
-/*                                                                            */
-/* ************************************************************************** */
-
 #include "./libft.h"
 
+/**
+ * Finds the last element of the list.
+ * @param	lst		Beginning of the list.
+ * @return	Returns the last element of the list.
+ */
 t_list	*ft_lstlast(t_list *lst)
 {
 	if (!lst)

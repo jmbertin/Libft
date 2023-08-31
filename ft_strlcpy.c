@@ -1,17 +1,12 @@
-/* ************************************************************************** */
-/*                                                                            */
-/*                                                        :::      ::::::::   */
-/*   ft_strlcpy.c                                       :+:      :+:    :+:   */
-/*                                                    +:+ +:+         +:+     */
-/*   By: jbertin <marvin@42.fr>                     +#+  +:+       +#+        */
-/*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2022/11/07 12:48:36 by jbertin           #+#    #+#             */
-/*   Updated: 2022/11/07 12:48:37 by jbertin          ###   ########.fr       */
-/*                                                                            */
-/* ************************************************************************** */
-
 #include "./libft.h"
 
+/**
+ * Copies up to size - 1 characters from the string src to dst, null-terminating the result.
+ * @param	dst	Destination buffer.
+ * @param	src	Source string.
+ * @param	size	Size of the destination buffer.
+ * @return	Returns the total length of the string tried to create (length of src).
+ */
 size_t	ft_strlcpy(char *dst, const char *src, size_t size)
 {
 	size_t	i;

@@ -1,17 +1,10 @@
-/* ************************************************************************** */
-/*                                                                            */
-/*                                                        :::      ::::::::   */
-/*   ft_lstadd_back.c                                   :+:      :+:    :+:   */
-/*                                                    +:+ +:+         +:+     */
-/*   By: jbertin <marvin@42.fr>                     +#+  +:+       +#+        */
-/*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2022/11/07 12:44:07 by jbertin           #+#    #+#             */
-/*   Updated: 2022/11/07 12:44:09 by jbertin          ###   ########.fr       */
-/*                                                                            */
-/* ************************************************************************** */
-
 #include "./libft.h"
 
+/**
+ * Adds the element 'new' at the end of the list.
+ * @param	alst	Pointer to the beginning of the list.
+ * @param	new		New element to add to the list.
+ */
 void	ft_lstadd_back(t_list **alst, t_list *new)
 {
 	t_list	*tmp_list;

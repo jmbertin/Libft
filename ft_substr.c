@@ -1,17 +1,11 @@
-/* ************************************************************************** */
-/*                                                                            */
-/*                                                        :::      ::::::::   */
-/*   ft_substr.c                                        :+:      :+:    :+:   */
-/*                                                    +:+ +:+         +:+     */
-/*   By: jbertin <jbertin@student.42.fr>            +#+  +:+       +#+        */
-/*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2022/11/07 12:50:17 by jbertin           #+#    #+#             */
-/*   Updated: 2022/11/09 18:12:18 by jbertin          ###   ########.fr       */
-/*                                                                            */
-/* ************************************************************************** */
-
 #include "./libft.h"
 
+/**
+ * Returns the minimum of two size_t values.
+ * @param	len		First size_t value.
+ * @param	size_s	Second size_t value.
+ * @return	Returns the smaller value between 'len' and 'size_s'.
+ */
 static size_t	ft_min(size_t len, size_t size_s)
 {
 	if (len > size_s)
@@ -19,6 +13,13 @@ static size_t	ft_min(size_t len, size_t size_s)
 	return (len);
 }
 
+/**
+ * Extracts a substring from a string starting from 'start' and of length 'len'.
+ * @param	s		Original string.
+ * @param	start	Starting index for the substring.
+ * @param	len		Length of the substring.
+ * @return	Returns a new substring or NULL if the allocation fails.
+ */
 char	*ft_substr(char const *s, unsigned int start, size_t len)
 {
 	size_t	i;

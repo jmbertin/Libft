@@ -1,17 +1,10 @@
-/* ************************************************************************** */
-/*                                                                            */
-/*                                                        :::      ::::::::   */
-/*   ft_bzero.c                                         :+:      :+:    :+:   */
-/*                                                    +:+ +:+         +:+     */
-/*   By: jbertin <marvin@42.fr>                     +#+  +:+       +#+        */
-/*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2022/11/07 12:42:26 by jbertin           #+#    #+#             */
-/*   Updated: 2022/11/07 12:42:29 by jbertin          ###   ########.fr       */
-/*                                                                            */
-/* ************************************************************************** */
-
 #include "./libft.h"
 
+/**
+ * Sets n bytes of s to zero.
+ * @param	s	Pointer to the block of memory to set to zero.
+ * @param	n	Number of bytes to be set to zero.
+ */
 void	ft_bzero(void *s, size_t n)
 {
 	unsigned char	*str;
